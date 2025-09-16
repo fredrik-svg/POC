@@ -3,6 +3,18 @@
 En superenkel **proof-of-concept** för röst-till-röst direkt mot **OpenAI Realtime API** från **Raspberry Pi 5**.
 Valfri **mini-backend** följer med för att hantera uppladdning av dokument till **OpenAI Vector Stores** (RAG).
 
+## Ladda ner projektet
+
+1. Se till att du har **Git** installerat (`sudo apt-get install git` på Debian-baserade system).
+2. Klona repot och gå in i katalogen:
+   ```bash
+   git clone https://github.com/openai/ai-realtime-poc.git
+   cd ai-realtime-poc
+   ```
+   <small>Byt ut URL:en ovan om du använder en egen fork.</small>
+
+Fortsätt därefter med instruktionerna nedan för respektive komponent.
+
 ## Arkitektur
 ```
 [Pi 5] -- WebSocket --> OpenAI Realtime (röst in/ut)
